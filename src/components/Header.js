@@ -13,7 +13,9 @@ function Header() {
             </sub>
           </h1>
           <div className="header__menu">
-            
+            <span class="material-symbols-outlined">
+                    menu
+            </span>
           </div>
         </div>
       </div>

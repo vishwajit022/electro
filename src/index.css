@@ -47,3 +47,17 @@ body {
     height: 1vh;
     border-radius: 90%;
 }
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__menu {
+    padding-left: 2vw;
+    cursor: pointer;
+    align-items: center;
+}
