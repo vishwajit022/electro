@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*upper nav*/
+
+.uppernav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+}
+
+.uppernav__icons {
+    display: flex;
+}
+
+.uppernav__icons__items {
+    padding: 0vw 1vw;
+}
+
+.uppernav__line {
+    margin-top: -1vh;
+}
+
+
+/*Header logo*/
+
+.header {
+    padding: 0 4vw;
+}
+
+.header__logo__title {
+    font-weight: 900;
+    display: flex;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 0.6vw;
+    height: 1vh;
+    border-radius: 90%;
+}
