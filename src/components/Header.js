@@ -13,7 +13,7 @@ function Header() {
             </sub>
           </h1>
           <div className="header__menu">
-            <MenuTwoToneIcon />
+            
           </div>
         </div>
       </div>
