@@ -19,7 +19,8 @@ function BelowHeader() {
       <div className="belowheader">
         <div className="all__departments">
           <div className="item1">
-            <span class="material-symbols-outlined">list</span>All Departments
+            <span class="material-symbols-outlined">list</span>
+            <p>Departments</p>
           </div>
 
           <div className="item">
@@ -40,17 +41,17 @@ function BelowHeader() {
           <div className="item">Car, Motorbike & Industrial</div>
         </div>
         <div className="bh__mid">
-          <div className=" red">
+          <div className=" r">
             <sup>All Pages</sup>
             <span class="larrow material-symbols-outlined">expand_more</span>
           </div>
-          <div className="">Featured Brands</div>
-          <div className="">Trending Styles</div>
-          <div className="">Gift Cards</div>
+          <div className="red">Featured Brands</div>
+          <div className="red">Trending Styles</div>
+          <div className="red">Gift Cards</div>
         </div>
-         <button className='ldbtn' onClick={toggleTheme}>
-            {isDarkMode ? "Light Mode" : "Dark Mode"}
-          </button>
+        <button className="ldbtn" onClick={toggleTheme}>
+          {isDarkMode ? "Light Mode" : "Dark Mode"}
+        </button>
         <div className="bh__right">Free Shipping on Orders $50+</div>
       </div>
     </div>

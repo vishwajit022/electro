@@ -25,9 +25,61 @@ function Header() {
            </sub>
          </h1>
          <div className="header__menu">
-           <span className="material-symbols-outlined" onClick={openNav}>
+           <span
+             className="material-symbols-outlined Departments btn"
+             onClick={openNav}
+           >
              menu
            </span>
+           {isSidebarOpen && (
+             <div className="sidebar">
+               <span className="closebtn" onClick={closeNav}>
+                 &times;
+               </span>
+               <ul>
+                 <li>Value of the Day</li>
+                 <li>Top 100 Offers</li>
+                 <li>New Arrivals</li>
+                 <li class="dropdown-item">Computers & Accessories</li>
+                 <ul class="dropdown-content">
+                   <li>Submenu Item 1</li>
+                   <li>Submenu Item 2</li>
+                 </ul>
+                 <li class="dropdown-item">Cameras, Audio, & Video</li>
+                 <ul class="dropdown-content">
+                   <li>Submenu Item 1</li>
+                   <li>Submenu Item 2</li>
+                 </ul>
+                 <li class="dropdown-item">Mobiles & Tablets</li>
+                 <ul class="dropdown-content">
+                   <li>Submenu Item 1</li>
+                   <li>Submenu Item 2</li>
+                 </ul>
+                 <li class="dropdown-item">Movies, Music & Video Games</li>
+                 <ul class="dropdown-content">
+                   <li>Submenu Item 1</li>
+                   <li>Submenu Item 2</li>
+                 </ul>
+                 <li class="dropdown-item">TV & Audio</li>
+                 <ul class="dropdown-content">
+                   <li>Submenu Item 1</li>
+                   <li>Submenu Item 2</li>
+                 </ul>
+                 <li class="dropdown-item">Watches & Eyewear</li>
+                 <ul class="dropdown-content">
+                   <li>Submenu Item 1</li>
+                   <li>Submenu Item 2</li>
+                 </ul>
+                 <li class="dropdown-item">Car, Motorbike & Industrial</li>
+                 <ul class="dropdown-content">
+                   <li>Submenu Item 1</li>
+                   <li>Submenu Item 2</li>
+                 </ul>
+
+                 {/* Add more sidebar items as needed */}
+               </ul>
+             </div>
+           )}
          </div>
 
          <div className="whole__search">
@@ -71,16 +123,18 @@ function Header() {
                <option value="speakers-2">Speakers</option>
              </select>
            </div>
-           <button className="">
+           <button className="search__icon">
              <span class="material-symbols-outlined sr">search</span>
            </button>
          </div>
        </div>
        <div className="header__right"></div>
-        
-       <span className="like hr__item material-symbols-outlined">favorite</span>
-       <span class="hr__item material-symbols-outlined">person</span>
-       <span class=" hr__item material-symbols-outlined">shopping_bag</span>
+
+       <span className="like hr__item material-symbols-outlined btn">
+         favorite
+       </span>
+       <span class="hr__item material-symbols-outlined btn">person</span>
+       <span class=" hr__item material-symbols-outlined btn">shopping_bag</span>
        <div className=" bag__price">$0.00</div>
      </div>
    </div>
