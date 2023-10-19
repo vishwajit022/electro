@@ -4,6 +4,8 @@ import Uppernav from './components/Uppernav';
 import Header from './components/Header';
 import BelowHeader from './components/BelowHeader';
 import ImageLine from './components/ImageLine';
+import BelowImageLine from './components/BelowImageLine';
+import TwoGrid from './components/TwoGrid';
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
         <Header/>
         <BelowHeader/>
         <ImageLine />
-        
+        <BelowImageLine/>
+        <TwoGrid/>
 
 
     </div>

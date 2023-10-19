@@ -2,40 +2,28 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 function ImageLine() {
-  const img1Ref = useRef(null);
-  const img2Ref = useRef(null);
   const img3Ref = useRef(null);
+  const imgtextRef = useRef(null);
 
   useEffect(() => {
-    // Create GSAP animations for each image
-    const tl = gsap.timeline();
+  // Delay the animation by 0.5 seconds
 
-    tl.from(img1Ref.current, {
-      x: -100,
-      opacity: 0,
+    gsap.from(img3Ref.current, {
+      y: 100,
       duration: 1,
-      ease: "power2.out",
-    })
-      .from(
-        img2Ref.current,
-        {
-          x: -100,
-          opacity: 0,
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"
-      ) // Start the animation 0.5 seconds after img1
-      .from(
-        img3Ref.current,
-        {
-          x: -100,
-          opacity: 0,
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"
-      ); // Start the animation 0.5 seconds after img2
+      
+    });
+
+    gsap.from(
+      imgtextRef.current,
+      {
+        duration: 1.4,
+        y: 2000,
+  stagger: 0.1, 
+        
+      },
+       // Start the text animation 0.5 seconds after the image
+    );
   }, []);
 
   return (
@@ -43,21 +31,15 @@ function ImageLine() {
       <div className="il__main">
         <div className="il__image">
           <div className="images">
+            <h3 ref={imgtextRef}>
+              We got the Best Deals on your Favourite Brands
+              <p>
+                <button className="checkout">Checkout</button>
+              </p>
+            </h3>
             <img
-              className="img1"
-              src="./images/iwatch.png"
-              alt="iWatch"
-              ref={img1Ref}
-            />
-            <img
-              className="img2"
-              src="./images/cam.png"
-              alt="Camera"
-              ref={img2Ref}
-            />
-            <img
-              className="img3"
-              src="./images/mac.png"
+              className="img3 img"
+              src="/images/mac.png"
               alt="Mac"
               ref={img3Ref}
             />
